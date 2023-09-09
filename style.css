@@ -1,0 +1,172 @@
+/* Default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Manrope font */
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Centeralising all elements vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/bg.jpg);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.142); 
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    height: 438px;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+/* Spacing between elements */
+p {
+    margin: 10px 0; 
+}
+
+/* Header Text (h1) */
+h1 {
+    font-weight: bold;
+}
+
+/* Slack Name */
+p[data-testid="slackUserName"] {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px; 
+}
+
+/* Slack Display Picture */
+img[data-testid="slackDisplayImage"] {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #ddd;
+}
+
+/* Current Day of the Week */
+p[data-testid="currentDayOfTheWeek"] {
+    font-size: 18px;
+    margin-top: 10px; 
+}
+
+/* Current UTC Time */
+p[data-testid="currentUTCTime"] {
+    font-size: 18px;
+    margin-top: 10px; 
+}
+
+/* Track */
+p[data-testid="myTrack"] {
+    font-size: 18px;
+    margin-top: 10px; 
+}
+
+/* GitHub URL */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* GitHub URL Button with GitHub Logo */
+.a[href^='https://github.com']:after {
+    display: inline-block;
+    content: '\f09b';
+    font-family: FontAwesome;
+    margin-left: 5px; 
+}
+
+/* GitHub URL Button */
+.github-button {
+    display: flex;
+    align-items: center;
+    background-color: #ff0062;
+    color: #eee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* GitHub URL Button with custom styling */
+.custom-btn {
+    width: 230px;
+    height: 25px; 
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .1),
+                4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    margin-top: 10px;
+}
+
+/* GitHub Button Background Gradient */
+.git-btn {
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+}
+
+.git-btn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.git-btn:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                  -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+/* Media query for screens with a maximum width of 576px (typical mobile size) */
+@media (max-width: 576px) {
+    .card {
+        width: auto;
+    }
+
+    /* Adjusted font sizes & other styles as needed for smaller screens */
+    p[data-testid="slackUserName"] {
+        font-size: 18px;
+    }
+
+    p[data-testid="currentDayOfTheWeek"],
+    p[data-testid="currentUTCTime"],
+    p[data-testid="myTrack"],
+    p[data-testid="githubURL"] {
+        font-size: 16px;
+    }
+}

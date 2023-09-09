@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/HNGx-icon">in
+    <title>My Personal Data</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Container card-->
+    <div class="card">
+        <!-- Slack Display Picture -->
+        <img src="/profile-img.jpeg" alt="Worthy Chukwuemeka" data-testid="slackDisplayImage">
+
+        <!-- Slack Name, title and pronouns -->
+        <p data-testid="slackUserName" style="font-weight: 800;">Worthy Chukwuemeka <br />
+            <span style="font-size: 15px; color: rgba(128, 128, 128, 0.634);">Miss • She/her</span>
+        </p>
+
+        <!-- Track -->
+        <p data-testid="myTrack" style="font-weight: light; color: rgba(67, 66, 66, 0.857);">Track: Frontend (HNGx)</p>
+
+        <!-- Current Day of the Week -->
+        <p data-testid="currentDayOfTheWeek" id="dayOfWeek" style="font-weight: bolder; font-size: 17px;"></p>
+
+        <!-- Current UTC Time -->
+        <p data-testid="currentUTCTime" id="utcTime" style="font-family: 'Play', sans-serif; font-weight: lighter;"></p>
+
+        <!-- GitHub URL Button with GitHub Logo -->
+        <a href="https://github.com/worthychukwuemeka/real-time-dataViewer.git" data-testid="githubURL" class="custom-btn git-btn">
+            <i class="fa-brands fa-github"></i> GitHub Repo
+        </a>
+
+    </div>
+
+    <!--Script.js file-->
+    <script src="script.js"></script>
+
+    <!--Font awesome Link-->
+    <script src="https://kit.fontawesome.com/08d9b1877f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
