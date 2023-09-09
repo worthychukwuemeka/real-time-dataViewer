@@ -1,6 +1,6 @@
 # Real-time Data Viewer - HNGx Frontend Stage 1 Project
 
-Welcome to the Real-time Data Viewer project, and this is my project entry for the HNGx internship program's Frontend Stage 1.
+Welcome to the Real-time Data Viewer project, my project entry for the HNGx internship program's Frontend Stage 1.
 
 ## Project Overview
 
