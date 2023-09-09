@@ -2,6 +2,17 @@
 
 Welcome to the Real-time Data Viewer project, my project entry for the HNGx internship program's Frontend Stage 1.
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Project Features](#project-features)
+- [Project Technologies](#project-technologies)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
 ## Project Overview
 
 This project aims to create a simple web application that displays personal data, including name, profile image, pronouns, track, current day of the week, date, and current UTC time. It also provides a link to the project's GitHub repository.
